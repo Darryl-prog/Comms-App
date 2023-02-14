@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/users-list.css" />
+    <script src="../scripts/Nav.js" defer></script>
+    <script src="../scripts/Users.js" defer></script>
+    <title>Communications Application</title>
+  </head>
+  <body onload="new Nav(); new Users();">
+    <h1 class="users-list__header">Users</h1>
+    <table class="users-list__table" cellspacing="0" id="users-list-table">
+      <tbody>
+        <tr>
+          <td>Name</td>
+          <td>User Email ID</td>
+          <td>Action</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="modal" id="modal-delete">
+      <div class="modal__header">
+        <p class="modal__header-text">Confirm User Deletion</p>
+        <button class="modal__close-btn" id="modal-close-button">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal__confirmation">
+        <img src="../assets/delete-icon.png" class="modal__icon" />
+        <p class="modal__confirmation-text">Are you sure?</p>
+      </div>
+      <div class="modal__buttons">
+        <button class="modal__ok-btn" id="modal-ok-button">Ok</button>
+        <button class="modal__cancel-btn" id="modal-cancel-button">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

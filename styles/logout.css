@@ -1,0 +1,39 @@
+.logout-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.5rem;
+}
+
+.logout-page__header {
+  margin-bottom: 3rem;
+  font-size: 1.65rem;
+}
+
+.logout-page__existing-users,
+.logout-page__new-users {
+  text-align: center;
+}
+
+.logout-page__existing-users {
+  margin-bottom: 2.5rem;
+}
+
+.logout-page__existing-users h3,
+.logout-page__new-users h3 {
+  margin-bottom: 3rem;
+}
+
+.logout-page__link {
+  color: black;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  width: 9.5rem;
+}
+
+.logout__logout-text {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/documents-list.css" />
+    <script src="../scripts/Nav.js" defer></script>
+    <script src="../scripts/Documents.js" defer></script>
+    <title>Communications Application</title>
+  </head>
+  <body onload="new Nav(); new Documents()">
+    <h1 class="documents-list__header documents-list__header--my-uploads">
+      My Uploads
+    </h1>
+    <table
+      class="documents-list__table"
+      id="documents-list-table"
+      cellspacing="0"
+    >
+      <tbody>
+        <tr>
+          <td>Label</td>
+          <td>File Name</td>
+          <td>Action</td>
+        </tr>
+      </tbody>
+    </table>
+    <h1 class="documents-list__header documents-list__header--shared-uploads">
+      Shared Uploads
+    </h1>
+    <div class="documents-list__share-uploads-table">
+      <table
+        class="documents-list__table"
+        id="shared-uploads-table"
+        cellspacing="0"
+      >
+        <tbody>
+          <tr>
+            <td>Label</td>
+            <td>File Name</td>
+            <td>Shared by</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="documents-list__upload-btn" id="documents-list-uploadBtn">
+        + Add Upload
+      </button>
+    </div>
+
+    <div
+      class="documents-list__modal documents-list__modal--upload"
+      id="documents-list-modal-upload"
+    >
+      <div class="modal-upload__header">
+        <p class="modal-upload__header-text">Upload</p>
+        <button class="modal-upload__header-btn" id="upload-modal-closeBtn">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-upload__input-field modal-upload__input-field--label">
+        <label for="modal-upload-label">Label</label>
+        <input type="text" name="label" id="modal-upload-label" />
+      </div>
+      <div class="modal-upload__input-field modal-upload__input-field--upload">
+        <label for="file">File Upload</label>
+        <input type="file" name="file" id="file" />
+      </div>
+      <div class="modal-upload__buttons">
+        <button class="modal-upload__upload-btn" id="modal-upload-okBtn">
+          Upload Now
+        </button>
+        <button class="modal-upload__cancel-btn" id="modal-upload-cancelBtn">
+          Cancel
+        </button>
+      </div>
+    </div>
+    <div
+      class="documents-list__modal documents-list__modal--edit"
+      id="documents-list-modal-edit"
+    >
+      <div class="modal-edit__header">
+        <p class="modal-edit__header-text">Edit</p>
+        <button class="modal-edit__header-btn" id="edit-modal-closeBtn">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-edit__input-field modal-edit__input-field--label">
+        <label for="modal-edit-label">Label</label>
+        <input type="text" name="label" id="modal-edit-label" />
+      </div>
+      <div class="modal-edit__buttons">
+        <button class="modal-edit__save-btn" id="modal-edit-saveBtn">
+          Save
+        </button>
+        <button class="modal-edit__cancel-btn" id="modal-edit-cancelBtn">
+          Cancel
+        </button>
+      </div>
+    </div>
+    <div class="modal" id="modal-delete">
+      <div class="modal__header">
+        <p class="modal__header-text">Confirm File Deletion</p>
+        <button class="modal__close-btn" id="delete-modal-closeBtn">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal__confirmation">
+        <img src="../assets/delete-icon.png" class="modal__icon" />
+        <p class="modal__confirmation-text">Are you sure?</p>
+      </div>
+      <div class="modal__buttons">
+        <button class="modal__ok-btn" id="delete-modal-OkBtn">Ok</button>
+        <button class="modal__cancel-btn" id="delete-modal-cancelBtn">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

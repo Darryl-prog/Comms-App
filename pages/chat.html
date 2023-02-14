@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/chat.css" />
+    <script src="../scripts/Nav.js" defer></script>
+    <script src="../scripts/Chat.js" defer></script>
+    <title>Communications Application</title>
+  </head>
+  <body onload="new Nav(); new Chat()">
+    <div class="chat-box">
+      <div class="chat-box__header">
+        <p class="chat-box__header-text">Group Chat</p>
+        <button class="chat-box__header-btn">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="chat-box__main" id="chat-box-main"></div>
+      <div class="chat-box__footer">
+        <form class="chat-box__form" id="chat-box-form">
+          <label for="chat-input" class="chat-box__label" id="chat-user"
+            >&nbsp;</label
+          >
+          <input
+            type="text"
+            name="chat"
+            id="chat-input"
+            class="chat-box__textarea"
+            placeholder="Say something..."
+            autofocus
+          />
+          <button type="submit" class="chat-box__btn">Send</button>
+          <button type="button" class="chat-box__btn" id="refresh-button">
+            Refresh
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

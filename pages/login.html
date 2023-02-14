@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <script src="../scripts/Validator.js" defer></script>
+    <script src="../scripts/Login.js" defer></script>
+    <title>Communications Application</title>
+  </head>
+  <body onload="new Login()">
+    <form class="login-form" id="login-form">
+      <h1 class="login-form__header">Login</h1>
+      <div class="login-form__field login-form__field--email">
+        <label for="email" class="login-form__label">Email</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          class="login-form__input"
+          placeholder="Email"
+        />
+      </div>
+      <div class="login-form__field login-form__field--password">
+        <label for="password" class="login-form__label">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="login-form__input"
+          placeholder="Password"
+        />
+      </div>
+      <button type="submit" class="login-form__button btn">Login</button>
+    </form>
+  </body>
+</html>

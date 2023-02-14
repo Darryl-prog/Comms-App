@@ -1,0 +1,11 @@
+.login-success__header {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+.login-sucess__welcome-text {
+  font-size: 1.3rem;
+  text-align: center;
+}

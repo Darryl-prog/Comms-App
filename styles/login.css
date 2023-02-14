@@ -1,0 +1,42 @@
+.login-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.5rem;
+}
+
+.login-form__header {
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.login-form__field {
+  margin-bottom: 2.5rem;
+}
+
+.login-form__field--email {
+  margin-right: 5rem;
+}
+
+.login-form__field--password {
+  margin-right: 7rem;
+}
+
+.login-form__label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 1.5rem;
+}
+
+.login-form__input {
+  border-radius: 0.4rem;
+  border: 1px solid black;
+  font-size: 1.1rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  width: 12.7rem;
+}
+
+.login-form__button {
+  background-color: #66fffe;
+}

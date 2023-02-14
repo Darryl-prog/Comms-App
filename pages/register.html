@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/register.css" />
+    <script src="../scripts/Validator.js" defer></script>
+    <script src="../scripts/Register.js" defer></script>
+    <title>Communications Application</title>
+  </head>
+  <body onload="new Register()">
+    <form class="register-form" id="register-form">
+      <h1 class="register-form__header">Register</h1>
+      <div class="register-form__field register-form__field--full-name">
+        <label for="full-name" class="register-form__label">Full Name</label>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          class="register-form__input"
+          placeholder="Full Name"
+        />
+      </div>
+      <div class="register-form__field register-form__field--email">
+        <label for="email" class="register-form__label">Email</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          class="register-form__input"
+          placeholder="Email"
+        />
+      </div>
+      <div class="register-form__field register-form__field--password">
+        <label for="password" class="register-form__label">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="register-form__input"
+          placeholder="Password"
+        />
+      </div>
+      <div class="register-form__field register-form__field--confirm-password">
+        <label
+          for="confirm-password"
+          name="confirm-password"
+          class="register-form__label"
+          >Confirm Password</label
+        >
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          class="register-form__input"
+          placeholder="Confirm Password"
+        />
+      </div>
+      <button type="submit" class="register-form__button btn">Register</button>
+    </form>
+  </body>
+</html>

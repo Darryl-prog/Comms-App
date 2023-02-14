@@ -1,0 +1,127 @@
+/* Remove border right of manage users nav-item */
+.nav__item--manage-users {
+  border-right: none;
+}
+
+.share__header {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+}
+
+.share__header--upload-sharing span {
+  font-weight: 300;
+}
+
+.share__table {
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  overflow: hidden;
+  width: 100%;
+}
+
+.share__table tr {
+  height: 2.5rem;
+}
+
+.share__table tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+.share__table tr:first-of-type {
+  background-color: #cccccc;
+}
+
+.share__table tr td:nth-of-type(1),
+.share__table tr td:nth-of-type(2) {
+  width: 40%;
+}
+
+.share__table tr td button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.share__table td {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.share__table tr td:not(td:last-of-type) {
+  border-right: 1px solid black;
+}
+
+.share__table tr td:not(td:first-of-type) {
+  text-align: center;
+}
+
+.share__header--add-sharing {
+  margin-bottom: 0.5rem;
+}
+
+.share__add-sharing-box {
+  border: 1px solid black;
+  display: flex;
+  height: 5rem;
+}
+
+.share__form {
+  align-items: center;
+  display: flex;
+  padding-left: 4.5rem;
+  width: 100%;
+}
+
+.share__form label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.share_select-box {
+  position: relative;
+}
+
+.share__select {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 0.3rem;
+  border: 1px solid black;
+  cursor: pointer;
+  height: 2.5rem;
+  margin-left: 2rem;
+  position: relative;
+  text-align: center;
+  width: 20rem;
+  z-index: 10;
+}
+
+.share__icon-box {
+  align-items: center;
+  border-radius: 0.3rem;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+  position: absolute;
+  right: 1%;
+  top: 0.2rem;
+  width: 2rem;
+}
+
+.share__icon {
+  background-color: black;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  height: 1rem;
+  width: 1.5rem;
+}
+
+.share__button {
+  background-color: #b3b3b3;
+  margin-left: 3rem;
+  font-weight: 300;
+}

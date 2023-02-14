@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/share.css" />
+    <script src="../scripts/Nav.js" defer></script>
+    <script src="../scripts/Share.js" defer></script>
+    <title>Communications Application</title>
+  </head>
+  <body onload="new Nav(); new Share()">
+    <h1 class="share__header share__header--upload-sharing">
+      Upload Sharing : <span id="file-label">&nbsp;</span>
+    </h1>
+    <table class="share__table" cellspacing="0" id="share-table">
+      <tbody>
+        <tr>
+          <td>Shared User</td>
+          <td>Action</td>
+        </tr>
+      </tbody>
+    </table>
+    <h1 class="share__header share__header--add-sharing">Add Sharing</h1>
+    <div class="share__add-sharing-box">
+      <form action="../pages/share.html" class="share__form" id="share-form">
+        <label for="user" class="share__label">Choose User:</label>
+        <div class="share_select-box">
+          <select name="user" id="select-users" class="share__select"></select>
+          <div class="share__icon-box">
+            <label for="user" class="share__icon">&nbsp;</label>
+          </div>
+        </div>
+        <button class="share__button btn" type="submit">Add Share</button>
+      </form>
+    </div>
+    <div class="modal" id="modal-delete">
+      <div class="modal__header">
+        <p class="modal__header-text">Confirm From Web Page</p>
+        <button class="modal__close-btn" id="modal-close-btn">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal__confirmation">
+        <img src="../assets/delete-icon.png" class="modal__icon" />
+        <p class="modal__confirmation-text">Are you sure?</p>
+      </div>
+      <div class="modal__buttons">
+        <button class="modal__ok-btn" id="modal-ok-btn">Ok</button>
+        <button class="modal__cancel-btn" id="modal-cancel-btn">Cancel</button>
+      </div>
+    </div>
+  </body>
+</html>

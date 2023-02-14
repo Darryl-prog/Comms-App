@@ -1,0 +1,32 @@
+.welcome-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.5rem;
+}
+
+.welcome-page__header {
+  margin-bottom: 3rem;
+  font-size: 1.65rem;
+}
+
+.welcome-page__existing-users,
+.welcome-page__new-users {
+  text-align: center;
+}
+
+.welcome-page__existing-users {
+  margin-bottom: 2.5rem;
+}
+
+.welcome-page__existing-users h3,
+.welcome-page__new-users h3 {
+  margin-bottom: 3rem;
+}
+
+.welcome-page__link {
+  color: black;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  width: 9.5rem;
+}

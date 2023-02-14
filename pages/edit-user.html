@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/edit-user.css" />
+    <script src="../scripts/Nav.js" defer></script>
+    <script src="../scripts/Validator.js" defer></script>
+    <script src="../scripts/Edit.js" defer></script>
+    <title>Communications Application</title>
+  </head>
+  <body onload="new Nav(); new Edit()">
+    <h1 class="edit-user__header">Edit User Information</h1>
+    <form class="edit-user__form" id="edit-user-form">
+      <div class="edit-user__field edit-user__field--full-name">
+        <label for="full-name" class="edit-user__label">Full Name</label>
+        <input
+          type="text"
+          id="fullname"
+          class="edit-user__input"
+          placeholder="Full Name"
+          name="fullname"
+        />
+      </div>
+      <div class="edit-user__field edit-user__field--email">
+        <label for="email" class="edit-user__label">Email</label>
+        <input
+          type="text"
+          id="email"
+          class="edit-user__input"
+          placeholder="Email"
+          name="email"
+        />
+      </div>
+      <button type="submit" class="edit-user__button btn">Save</button>
+    </form>
+  </body>
+</html>
